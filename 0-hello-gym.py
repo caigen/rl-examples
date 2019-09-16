@@ -1,6 +1,6 @@
 # ipython for display
-import numpy as np
 import gym
+from gym import envs
 
 # ================================
 name = "FrozenLake-v0"
@@ -44,5 +44,4 @@ for i_episode in range(10):
 env.close()
 
 # ================================
-from gym import envs
 print(envs.registry.all())
