@@ -64,6 +64,8 @@ for episode in range(total_episodes):
 
         # If done (if we're dead): finish episode
         if done:
+            if episode % 50 == 0:
+                env.render()
             break
 
     # Reduce the epsilon, less exploration
